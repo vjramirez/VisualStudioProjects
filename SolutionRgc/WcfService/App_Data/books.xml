@@ -1,0 +1,34 @@
+﻿<usuarios>
+  <usuario>
+    <fecha>01/11/2017</fecha>
+    <cedula>13871783</cedula>
+    <nombre>Victor</nombre>
+    <apellido1>Ramirez</apellido1>
+    <apellido2>Duran</apellido2>
+    <escliente>0</escliente>
+  </usuario>
+  <usuario>
+    <fecha>11/11/2017</fecha>
+    <cedula>13834573</cedula>
+    <nombre>Victor</nombre>
+    <apellido1>Ramirez</apellido1>
+    <apellido2>Rivero</apellido2>
+    <escliente>1</escliente>
+  </usuario>
+  <usuario>
+    <fecha>17/11/2017</fecha>
+    <cedula>37826971</cedula>
+    <nombre>Laura</nombre>
+    <apellido1>Duarte</apellido1>
+    <apellido2>Rivero</apellido2>
+    <escliente>1</escliente>
+  </usuario>
+  <usuario>
+    <fecha>30/11/2017</fecha>
+    <cedula>9999999</cedula>
+    <nombre>Jorge</nombre>
+    <apellido1>Ramirez</apellido1>
+    <apellido2>Duran</apellido2>
+    <escliente>0</escliente>
+  </usuario>
+</usuarios>

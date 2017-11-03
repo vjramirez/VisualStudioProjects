@@ -1,0 +1,9 @@
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\bin\WcfService.dll.config
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\bin\WcfService.dll
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\bin\WcfService.pdb
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\obj\Debug\WcfService.dll
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\obj\Debug\WcfService.pdb
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\bin\Newtonsoft.Json.dll
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\bin\Newtonsoft.Json.xml
+C:\Users\vecto\Documents\Visual Studio 2017\Projects\SolutionRgc\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
