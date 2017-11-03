@@ -31,4 +31,12 @@
     <apellido2>Duran</apellido2>
     <escliente>0</escliente>
   </usuario>
+  <usuario>
+    <fecha>22/11/2017</fecha>
+    <cedula>9999999</cedula>
+    <nombre>Roberto</nombre>
+    <apellido1>Ramirez</apellido1>
+    <apellido2>Duran</apellido2>
+    <escliente>1</escliente>
+  </usuario>
 </usuarios>

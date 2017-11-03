@@ -21,14 +21,14 @@ namespace WcfService
         //XmlReader reader = XmlReader.Create(new StringReader("App_Data/books.xml"));
 
 
-        
+
 
         public string GetData(DateTime fechaIni, DateTime fechaFin)
         {
 
             XDocument doc = XDocument.Load(Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data", "books.xml"));
 
-            var query = from y in doc.Descendants("usuario")
+            var query = (from y in doc.Descendants("usuario")
                         where Convert.ToDateTime(y.Element("fecha")?.Value) >= fechaIni && Convert.ToDateTime(y.Element("fecha")?.Value) <= fechaFin
                         select new Usuario {
                             fecha = y.Element("fecha").Value,
@@ -37,9 +37,19 @@ namespace WcfService
                             apellido1 = y.Element("apellido1").Value,
                             apellido2 = y.Element("apellido2").Value,
                             escliente = (y.Element("escliente").Value == "1")? "SI":"NO",
-                        };
+                        }).ToList();
 
-                     string json = JsonConvert.SerializeObject(query);
+                        var grouping = (from u in query
+                                        group u by u.documento into ugroup
+                                        select new usuario
+                                        {
+                                            documento = ugroup.Key,
+                                            nombrecompleto = ugroup.Count() > 1 ? "Mas de un usuario" : ugroup.FirstOrDefault().nombrecompleto,
+                                            fecha = ugroup.Count() > 1 ? string.Empty : ugroup.FirstOrDefault().fecha,
+                                            escliente = ugroup.Count() > 1 ? string.Empty : ugroup.FirstOrDefault().escliente
+                                        }).ToList();
+
+                     string json = JsonConvert.SerializeObject(grouping);
 
             return json;
         }
